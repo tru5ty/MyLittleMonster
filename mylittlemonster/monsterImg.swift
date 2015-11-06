@@ -21,13 +21,13 @@ class MonsterImg: UIImageView {
     
     func playIdleAnimation() {
         
-        self.image = UIImage(named: "idle 1.png")
+        self.image = UIImage(named: "idle1.png")
         
         self.animationImages = nil
         
         var imgArray = [UIImage]()
         for var x = 1; x <= 4; x++ {
-            let img = UIImage(named: "idle \(x).png")
+            let img = UIImage(named: "idle\(x).png")
             imgArray.append(img!)
         }
     
@@ -39,13 +39,13 @@ class MonsterImg: UIImageView {
     
     func playDeathAnimation() {
         
-        self.image = UIImage(named: "dead 5.png")
+        self.image = UIImage(named: "dead5.png")
         
         self.animationImages = nil
         
         var imgArray = [UIImage]()
         for var x = 1; x <= 5; x++ {
-            let img = UIImage(named: "dead \(x).png")
+            let img = UIImage(named: "dead\(x).png")
             imgArray.append(img!)
         }
         

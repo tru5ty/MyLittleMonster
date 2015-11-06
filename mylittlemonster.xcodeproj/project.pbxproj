@@ -10,8 +10,8 @@
 		2344016C1BEB171600EB2A7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2344016B1BEB171600EB2A7E /* AppDelegate.swift */; };
 		2344016E1BEB171600EB2A7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2344016D1BEB171600EB2A7E /* ViewController.swift */; };
 		234401711BEB171600EB2A7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2344016F1BEB171600EB2A7E /* Main.storyboard */; };
-		234401731BEB171600EB2A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234401721BEB171600EB2A7E /* Assets.xcassets */; };
 		234401761BEB171600EB2A7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234401741BEB171600EB2A7E /* LaunchScreen.storyboard */; };
+		238D29A51BEC6967000B8BCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234401721BEB171600EB2A7E /* Assets.xcassets */; };
 		23AA6C761BEC19560005C078 /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA6C751BEC19560005C078 /* DragImg.swift */; };
 		23AA6C781BEC47740005C078 /* monsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA6C771BEC47740005C078 /* monsterImg.swift */; };
 /* End PBXBuildFile section */
@@ -130,7 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				234401761BEB171600EB2A7E /* LaunchScreen.storyboard in Resources */,
-				234401731BEB171600EB2A7E /* Assets.xcassets in Resources */,
+				238D29A51BEC6967000B8BCA /* Assets.xcassets in Resources */,
 				234401711BEB171600EB2A7E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				INFOPLIST_FILE = mylittlemonster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Nathan.McGuire.mylittlemonster;
@@ -268,6 +269,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				INFOPLIST_FILE = mylittlemonster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Nathan.McGuire.mylittlemonster;
