@@ -67,7 +67,7 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle 1" translatesAutoresizingMaskIntoConstraints="NO" id="idT-08-OCX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle 1" translatesAutoresizingMaskIntoConstraints="NO" id="idT-08-OCX" customClass="MonsterImg" customModule="mylittlemonster" customModuleProvider="target">
                                 <rect key="frame" x="18" y="225" width="440" height="354"/>
                                 <animations/>
                                 <constraints>
@@ -78,7 +78,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="eOi-Da-MKq" userLabel="Food/Heart Stack View">
                                 <rect key="frame" x="155" y="122" width="290" height="98"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="M1U-Ng-5Lj">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="M1U-Ng-5Lj" customClass="DragImg" customModule="mylittlemonster" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
                                         <animations/>
                                         <constraints>
@@ -95,7 +95,7 @@
                                             </mask>
                                         </variation>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="nyK-Uz-yL4">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="nyK-Uz-yL4" customClass="DragImg" customModule="mylittlemonster" customModuleProvider="target">
                                         <rect key="frame" x="195" y="0.0" width="95" height="98"/>
                                         <animations/>
                                     </imageView>
@@ -181,7 +181,12 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="foodImg" destination="nyK-Uz-yL4" id="Qpr-CG-GNm"/>
+                        <outlet property="heartImg" destination="M1U-Ng-5Lj" id="JQC-9H-cJU"/>
                         <outlet property="monsterImg" destination="idT-08-OCX" id="cbk-sL-VFe"/>
+                        <outlet property="penalty1Img" destination="AR0-YL-00h" id="Dub-eP-p0F"/>
+                        <outlet property="penalty2Img" destination="u9G-Qq-QAR" id="tSq-JC-TfX"/>
+                        <outlet property="penalty3Img" destination="VD5-go-y9k" id="6nH-9c-1GY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -12,6 +12,8 @@
 		234401711BEB171600EB2A7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2344016F1BEB171600EB2A7E /* Main.storyboard */; };
 		234401731BEB171600EB2A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234401721BEB171600EB2A7E /* Assets.xcassets */; };
 		234401761BEB171600EB2A7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234401741BEB171600EB2A7E /* LaunchScreen.storyboard */; };
+		23AA6C761BEC19560005C078 /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA6C751BEC19560005C078 /* DragImg.swift */; };
+		23AA6C781BEC47740005C078 /* monsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA6C771BEC47740005C078 /* monsterImg.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		234401721BEB171600EB2A7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		234401751BEB171600EB2A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		234401771BEB171600EB2A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23AA6C751BEC19560005C078 /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
+		23AA6C771BEC47740005C078 /* monsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = monsterImg.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				234401721BEB171600EB2A7E /* Assets.xcassets */,
 				234401741BEB171600EB2A7E /* LaunchScreen.storyboard */,
 				234401771BEB171600EB2A7E /* Info.plist */,
+				23AA6C751BEC19560005C078 /* DragImg.swift */,
+				23AA6C771BEC47740005C078 /* monsterImg.swift */,
 			);
 			path = mylittlemonster;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23AA6C781BEC47740005C078 /* monsterImg.swift in Sources */,
+				23AA6C761BEC19560005C078 /* DragImg.swift in Sources */,
 				2344016E1BEB171600EB2A7E /* ViewController.swift in Sources */,
 				2344016C1BEB171600EB2A7E /* AppDelegate.swift in Sources */,
 			);
@@ -287,6 +295,7 @@
 				2344017C1BEB171600EB2A7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
