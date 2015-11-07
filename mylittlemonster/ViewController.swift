@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var monsterImg:MonsterImg!
     @IBOutlet weak var foodImg:DragImg!
     @IBOutlet weak var heartImg:DragImg!
@@ -17,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var penalty2Img:UIImageView!
     @IBOutlet weak var penalty3Img:UIImageView!
     
+    @IBOutlet weak var replayButton: UIButton!
+
     let DIM_ALPHA: CGFloat = 0.2
     let OPAQUE: CGFloat = 1.0
     let MAX_PENALTIES = 3
@@ -37,12 +40,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        resetGameState()
+        
         foodImg.dropTarget = monsterImg
         heartImg.dropTarget = monsterImg
-        
-        penalty1Img.alpha = DIM_ALPHA
-        penalty2Img.alpha = DIM_ALPHA
-        penalty3Img.alpha = DIM_ALPHA
+
+//        penalty1Img.alpha = DIM_ALPHA
+//        penalty2Img.alpha = DIM_ALPHA
+//        penalty3Img.alpha = DIM_ALPHA
+//        
+//        replayButton.hidden = true
         
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "itemDroppedOnCharacter:", name: "onTargetDropped", object: nil)
@@ -146,9 +153,28 @@ class ViewController: UIViewController {
         timer.invalidate()
         monsterImg.playDeathAnimation()
         sfxDeath.play()
+        replayButton.hidden = false
+        
     }
     
+    func resetGameState() {
+        penalties = 0
+        currentItem = 0
+        penalty1Img.alpha = DIM_ALPHA
+        penalty2Img.alpha = DIM_ALPHA
+        penalty3Img.alpha = DIM_ALPHA
+        foodImg.alpha = DIM_ALPHA
+        heartImg.alpha = DIM_ALPHA
+        replayButton.hidden = true
+        monsterHappy = true
+        monsterImg.playIdleAnimation()
+        startTimer()
+        
+    }
     
+        @IBAction func replayButton(sender: AnyObject) {
+            resetGameState()
+    }
     
     
     
